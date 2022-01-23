@@ -1,3 +1,5 @@
+## written by mar, edited for efficiency by jake ross
+
 import arcpy
 import os
 from arcpy import env
