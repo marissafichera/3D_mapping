@@ -1,3 +1,5 @@
+# written by jake ross and marissa fichera
+
 import os
 import rasterio
 from numpy import array, dstack
