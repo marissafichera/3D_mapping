@@ -1,3 +1,5 @@
+# written by marissa m. fichera
+
 import os
 import re
 import numpy as np
