@@ -1,4 +1,4 @@
-## written by marissa fichera
+## written by marissa m. fichera
 
 # Import system modules
 import arcpy
