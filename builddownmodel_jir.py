@@ -17,7 +17,7 @@ env.outputCoordinateSystem = arcpy.SpatialReference("NAD 1983 UTM Zone 13N")
 arcpy.env.snapRaster = r'E:\DelawareBasin\DelawareBasin_geodata\workingdata\BASEMAP.gdb\z_snapraster'
 arcpy.env.overwriteOutput = True
 
-# setup config variables
+# setup config variablez
 ## USER INPUT - WORKSPACE - WHERE LOCAL GDB WILL BE CREATED
 CONFIG = {'ROOT': 'E:\DelawareBasin\DelawareBasin_geodata\workingdata'}
 ## USER INPUT - WORKSPACE - WHERE NETWORK GDB WILL BE CREATED (need to create this folder ahead of time)
