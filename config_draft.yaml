@@ -1,0 +1,57 @@
+input_directory: ./exampledata
+output_directory: ./exampleoutput
+overwrite_output: True
+step1:
+  arcpy_workspace: E:\DelawareBasin\DelawareBasin_geodata\workingdata\dbasin_geodata_originals5_deccheck.gdb
+  arcpy_snapRaster: E:\DelawareBasin\DelawareBasin_geodata\workingdata\BASEMAP.gdb\z_snapraster
+  working_geodb: E:\DelawareBasin\DelawareBasin_geodata\workingdata\QCoutputs_v12.gdb
+  working_folder: ##
+  final_out_geodb: ## E:\DelawareBasin\DelawareBasin_geodata\workingdata\final_out_example.gdb
+  cell_size: ##
+  
+  unitnames: 
+    - U01
+    - U02
+    - U03
+    - U04
+    - U05
+    - U06
+    - U07
+    - U08
+    - U09
+    - U10
+    - U11
+    - U12
+  elev_column_names: ## names of column headers that indicate elevation control data in each formation file
+    - elev01
+    - elev02
+    - elev03
+    - elev04
+    - elev05
+    - elev06
+    - elev07
+    - elev08 
+    - elev09
+    - elev10
+    - elev11
+    - elev12
+  topo_to_raster_variables: ## need to make sure all specified fcs (cliffs, etc.) are in working_geodb
+    - inPointElevations
+    - inBoundary
+    - inContours
+    - inLake
+    - inSinks
+    - inStream
+    - inCliff
+    - inCoast
+    - inExclusion
+  threshold: 100 #ft. threshold for outlier removal
+  
+step2:
+  copy_to_network_flag: ##yes or no
+  env.outputCoordinateSystem: ##
+  version: ##
+  study_boundary: ## feature class of model extent
+  skip_to_step_flag: ## probably a nice option
+  
+   
