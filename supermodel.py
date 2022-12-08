@@ -399,7 +399,7 @@ def generate_uncertainty_maps(unitnames, n, masks):
         if not os.path.exists(uncertainty_path):
             os.makedirs(uncertainty_path)
         outSTD_map.save('{}\{}'.format(uncertainty_path, nameSTD))
-        outMEAN_map.save('{}\{}}'.format(uncertainty_path, nameMEAN))
+        outMEAN_map.save('{}\{}'.format(uncertainty_path, nameMEAN))
 
         umaps.append(nameSTD)
         umaps.append(nameMEAN)
