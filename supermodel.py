@@ -22,6 +22,7 @@ stepwise_output_folder = r'E:\DelawareBasin\DelawareBasin_geodata\workingdata\wo
 CONFIG_FIN_V = {'ROOT': r'W:\statewide\aqua_map3D\am_references\MarsMapMethods\tutorial\example_network_output'}
 
 v = '001'
+basinname = 'Delaware Basin'
 
 def topo_to_raster(fc, i, elev_ID, unit):
     print(fc, i, elev_ID, unit)
@@ -511,6 +512,13 @@ def main():
     umaps = generate_uncertainty_maps(unitnames, n, exts_modelext_disc)
 
 
+    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ done generating uncertainty maps ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+
+
+
+
     ########## copies to network ##############
     ########## NMBG specific and user input req'd ###########
 
@@ -529,6 +537,13 @@ def main():
         print('okay - DID NOT COPY TO NETWORK')
     else:
         print('error: please specify whether or not to copy to a network folder with yes or no')
+
+    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+    print('~~~~~~~~~~~~~~~ {} ~~~~~~~~~~~~~~~~~~~~'.format(basinname))
+    print('~~~~~~~~~~~~~~~~ SUPERMODEL ~~~~~~~~~~~~~~~~~~~~~~')
+    print('~~~~~~~~~~~~~~~~~~~~ IS ~~~~~~~~~~~~~~~~~~~~~~')
+    print('~~~~~~~~~~~~~~~~~~~ NOW ~~~~~~~~~~~~~~~~~~~~~~')
+    print('~~~~~~~~~~~~~~~~~ COMPLETE ~~~~~~~~~~~~~~~~~~~~')
 
 if __name__ == '__main__':
     main()
